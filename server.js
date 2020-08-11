@@ -4,6 +4,7 @@ import path from 'path';
 
 const app = express();
 
+
 app.set('view engine', 'hbs');
 //process.env.PWD - путь к файлу 'public'
 app.use(express.static(path.join(process.env.PWD, 'public')));
